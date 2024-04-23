@@ -18,7 +18,7 @@ div.Bbox {
 /* set the top box */
 
 h1+h2{
-    color: color-mix(in lch, plum, pink);
+    color: color-mix(in lch, plum, white);
 }
 /*set the h2 that the one has h1 befor cholor*/
 h1{
@@ -47,7 +47,7 @@ em.com{
 /* Set a puple border */
 
 li[class] {
-    background: color(display-p3 1 0.5 0 / .5);
+    background: color(display-p3 1 0.5 0.5 / .5);
 }
 li[class~="imp"] {
     font-size: 150%;
