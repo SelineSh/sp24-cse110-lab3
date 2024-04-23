@@ -18,7 +18,7 @@ div.Bbox {
 /* set the top box */
 
 h1+h2{
-    color: rgb(0, 0, 135);
+    color: color-mix(in lch, plum, pink);
 }
 /*set the h2 that the one has h1 befor cholor*/
 h1{
@@ -37,7 +37,8 @@ em.com{
 /*set two em's display*/
 
 .Pbor {
-    border: 10px solid rgb(163, 107, 220);
+    border: 10px solid ;
+    border-color: rgb(163, 107, 220);
     border-radius: 1em;
     padding: 10px 5% 10px 5%;
     margin: 10px 30vw 10px 30vw;
@@ -46,7 +47,7 @@ em.com{
 /* Set a puple border */
 
 li[class] {
-    background: #f2c4e3;
+    background: color(display-p3 1 0.5 0 / .5);
 }
 li[class~="imp"] {
     font-size: 150%;
@@ -75,13 +76,13 @@ form{
 
 textarea{
     max-width: 400px;
-    min-width: none;
+    min-width: 100px;
 }
 /*set the textarea the max-wigth and no min-width*/
 
 #sub:hover{
     background-color: burlywood;
-    &active {
+    &:active {
         box-shadow: 2px 2px 5px #fc894d;
     }
 }
@@ -146,6 +147,7 @@ summary:has(+ p){
 .pet {
     justify-content: flex-start;
 }
+/*set the class pet flex*/
 
 .trans {
     display: flex;
@@ -160,6 +162,7 @@ summary:has(+ p){
 .trans {
     justify-content: center;
 }
+/*set the class trans flex*/
 
 .note {
     display: flex;
@@ -174,6 +177,8 @@ summary:has(+ p){
 .note {
     justify-content: space-evenly;
 }
+/*set the class note flex*/
+
 
 .item1 { grid-area: left; }
 .item2 { grid-area: right; }
@@ -190,6 +195,8 @@ summary:has(+ p){
   grid-template-columns: 50px 50px 50px 50px;
   grid-template-rows: auto;
 }
+/*set the class q1 grid*/
+
 
 .chose1 { grid-area: left; }
 .chose2 { grid-area: header; }
@@ -206,6 +213,7 @@ summary:has(+ p){
   grid-template-columns: 50px 50px 50px 50px;
   grid-template-rows: auto;
 }
+/*set the class q2 grid*/
 
 .word1 { grid-area: header; }
 .word2 { grid-area: main; }
@@ -222,3 +230,4 @@ summary:has(+ p){
   grid-template-columns: 50px 50px 50px 50px;
   grid-template-rows: auto;
 }
+/*set the class q3 grid*/
