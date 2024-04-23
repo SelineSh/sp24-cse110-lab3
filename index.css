@@ -80,10 +80,12 @@ textarea{
 }
 /*set the textarea the max-wigth and no min-width*/
 
-#sub:hover{
-    background-color: burlywood;
+#sub{
+    &:hover{
+        background-color: burlywood;
+    }
     &:active {
-        box-shadow: 2px 2px 5px #fc894d;
+        box-shadow: 2px 2px 5px #b9673a;
     }
 }
 /*set the buttom when hover change background color and 
