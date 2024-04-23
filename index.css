@@ -79,10 +79,9 @@ textarea{
 
 #sub:hover{
     background-color: burlywood;
-}
-#sub:active {
-    box-shadow: 2px 2px 5px #fc894d;
-    
+    &:active {
+        box-shadow: 2px 2px 5px #fc894d;
+    }
 }
 /*set the buttom when hover change background color and 
 active when click has box shadow*/
@@ -229,16 +228,3 @@ summary:has(+ p){
   grid-template-rows: auto;
 }
 /*set the class q3 grid*/
-
-.pic {
-    font-family: system-ui;
-    font-size: 1.2rem;
-    & > a {
-      color: tomato;
-      &:hover,
-      &:focus {
-        color: ivory;
-        background-color: tomato;
-      }
-    }
-}
