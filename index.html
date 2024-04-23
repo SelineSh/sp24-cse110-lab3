@@ -4,21 +4,36 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"> 
     <title>Pomodoro Timer First Meeting</title>
+
+    <style>
+      h1{
+        border-bottom: 5px dotted color-mix(in lch, plum, rgb(234, 255, 192));
+      }
+      h3{
+        border-top: 5px dotted color(display-p3 1 0.5 0 / .5);
+      }
+    </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap" rel="stylesheet">
    </head>
 
   <body>
-    
-    <header><h1>Pomodoro Timer First Meeting</h1>
-    <h2>CSE110 spring 2024</h2>
-    <h3>4/14/2024</h3>
+    <header>
+      <div class="Bbox">
+        <h1>Pomodoro Timer First Meeting</h1>
+        <h2>CSE110 spring 2024</h2>
+        <h3>4/14/2024</h3>
+      </div>
     </header>
     <img src="https://th.bing.com/th/id/R.90b487398ae957dd3d28d4be4ff8ab35?rik=VrSLNuH6dGn5jw&riu=http%3a%2f%2fwww.desicomments.com%2fwp-content%2fuploads%2f2017%2f02%2fWelcome-Pic.jpg&ehk=xZK7Dj%2fUJjBxilCtvOAjNx7a%2bU7CDtu5miwOYpfIM3A%3d&risl=&pid=ImgRaw&r=0" alt="Welcom" 
     width="512" />
     
-    <div class="shadowbox">
-    <p>Welcom to our Pomodoro Timer First Meeting</p>
-    </div>
+    
+    <p class="Pbor">Welcom to our Pomodoro Timer First Meeting</p>
+    
 
     <hr />
 
@@ -33,26 +48,28 @@
         <h2>Today's Important Topics</h2>
         <nav>
         <ul>
-            <li><a href="https://www.when2meet.com/?24640533-dcB8f">Fill out the <em>Whentomeet</em> to dchedule meeting</a></li>
-            <li>Sign in</li>
-            <li>Discussion of weekly mandated meeting times</li>
+            <li class="lis imp"><a href="https://www.when2meet.com/?24640533-dcB8f">Fill out the <em>Whentomeet</em> to dchedule meeting</a></li>
+            <li class="lis">Sign in</li>
+            <li class="lis">Discussion of weekly mandated meeting times</li>
         </ul>
         </nav>
-        <p><strong>Please fill out the <em>Whentomeet</em> before proceeding to the next step!!!</strong></p>
+        <p><strong>Please fill out the <em class="whe">Whentomeet</em> before proceeding to the next step!!!</strong></p>
         </section>
 
         <section>
         <h2>Sign in</h2>
         <details>
             <summary>How to sign in?</summary>
-            Fill out the form below to <em>complete</em> the sign-in.
+            
+            <p>Fill out the form below to <em class="com">complete</em> the sign-in.</p>
+          
           </details><br>
         <form action="https://docs.google.com/document/d/11daxhNunpIBhfiVOH7yevmaQ_7nx_Ip-v9B1UrDEnRk/edit">
             <fieldset>
-            <label for="fname">Your name:</label><br>
-            <input type="text" id="fname" placeholder="Name"><br>
+            <label>Your name:</label><br>
+            <input type="text" id="fw" placeholder="Name"><br>
             <p>Is this your first online group meeting?</p>
-            <input type="radio" \ name="gender" >yes<input type="radio" name="gender" >no<br>
+            <input type="radio" name="gender" >yes<input type="radio" name="gender" >no<br>
             <p>Your grade:</p>
             <select>
                 <option>1st</option>
@@ -63,14 +80,14 @@
             </select><br>
             <p>Feedback:</p>
             <textarea></textarea><br>
-            <label for="fdate">Date:</label><br>
-            <input type="date" id="fdate"><br><br>
-            <input type="submit" value="Submit">
+            <label>Date:</label><br>
+            <input type="date" id="fw"><br><br>
+            <input type="submit" id="sub" value="Submit">
         </fieldset>
         </form>    
         </section>
 
-        <section>
+        <section class="h">
         <h2>Meeting time options</h2>  
         <ol>
             <li><b>Monday</b><i> 12:00pm - 1:00pm</i></li>
@@ -81,19 +98,61 @@
         </ol>  
         </section>
         </article>
+        <h2>fun fact</h2>
+        <p>What is your favorite pet?<p>
+        <div class="pet">
+          <div>cat</div>
+          <div>dog</div>
+          <div>other</div>
+        </div>
 
+        <p>What kind of transportation do you usually use?</p>
+          <div class="trans">
+            <div>car</div>
+            <div>mass transit</div>
+            <div>walk</div>
+          </div>
+          
+        <p>What do you like to use to take notes in class?</p>
+          <div class="note">
+            <div>ipad</div>
+            <div>laptop</div>
+            <div>notebook</div>
+          </div>
+
+        <h2>Based on the options above, please pick the typography you think looks best.</h2>
+        
+        <div class="q1">
+          <div class="item1">cat</div>
+          <div class="item2">dog</div>
+          <div class="item3">other</div>
+        </div>
+
+        <div class="q2">
+          <div class="chose1">car</div>
+          <div class="chose2">mass transit</div>
+          <div class="chose3">walk</div>
+        </div>
+
+        <div class="q3">
+          <div class="word1">ipad</div>
+          <div class="word2">laptop</div>
+          <div class="word3">notebook</div>
+        </div>
 
         <footer>
             <h2>Meeting Recordings</h2>
+              <section class="audio">
                 <p>Audio</p>
                 <audio controls src="src/audio1418016196.m4a"></audio><br>
-                
+              </section>     
+              
+              <section class="video">
                 <p>Video</p>
                 <video controls width="250">
                     <source src="src/video1418016196.mp4" type="video/mp4" /><br>
-                                    
-
                   </video>
+                </section>
         </footer>
     </main>
   </body>

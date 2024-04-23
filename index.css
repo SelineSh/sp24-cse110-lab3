@@ -1,0 +1,224 @@
+* {
+    margin: auto;
+}
+/*all the margin is auto*/
+
+div.Bbox {
+    background: rgba(0, 255, 251, 0.25);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1mm;
+    padding-right: 5cm;
+
+    margin-top: 1vh;
+    margin-bottom: 15px;
+    margin-left: 1vw;
+    margin-right: 75px;
+}
+/* set the top box */
+
+h1+h2{
+    color: rgb(0, 0, 135);
+}
+/*set the h2 that the one has h1 befor cholor*/
+h1{
+    --my-var: rgb(227, 172, 227);
+    background-color: var(--my-var, orange);
+    font-style: italic;
+}
+/*set the h1 background*/
+
+em.whe{
+    display: inline;;
+}
+em.com{
+    display: inline-block;
+}
+/*set two em's display*/
+
+.Pbor {
+    border: 10px solid rgb(163, 107, 220);
+    border-radius: 1em;
+    padding: 10px 5% 10px 5%;
+    margin: 10px 30vw 10px 30vw;
+    text-align: center;
+}
+/* Set a puple border */
+
+li[class] {
+    background: #f2c4e3;
+}
+li[class~="imp"] {
+    font-size: 150%;
+}
+/*set the list bcakground and set bigger the one has link*/
+
+a{
+
+}
+a:link,
+a:visited {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+a:hover {
+    color: hsl(341, 61%, 69%);
+}
+/*set the link color and when user hover change the color*/
+
+form{
+    text-align: center;
+    height: 300px;
+    width: 400px;
+}
+/* set the form to center and side*/
+
+textarea{
+    max-width: 400px;
+    min-width: none;
+}
+/*set the textarea the max-wigth and no min-width*/
+
+#sub:hover{
+    background-color: burlywood;
+    &active {
+        box-shadow: 2px 2px 5px #fc894d;
+    }
+}
+/*set the buttom when hover change background color and 
+active when click has box shadow*/
+
+em.whe{
+    color: red;
+}
+/*set the em the class is whe to red*/
+
+details > p {
+    color: rgb(5, 117, 165);
+}
+/*set the p in details color to blue*/
+
+details em{
+    text-decoration: underline dotted;
+}
+/*set the em in details has a underline dotted*/
+
+h2 ~ p{
+    color: rgb(69, 70, 79);
+}
+/*set all the p that after h2 to color gray*/
+
+#fw{
+    font-family: "Jacquard 12 Charted", system-ui;
+    font-weight: 400;
+    font-style: normal;      
+}
+/*set the txet font style in the form*/
+
+summary:has(+ p){
+    color: rgb(66, 103, 11);
+}
+/*set the summary that befor p to color green*/
+
+.audio{
+    position: static;
+}
+/*set the auidio position is static*/
+
+@media (min-width: 700px){
+    .video{
+        position: relative;
+        bottom: 2cm; left: 400px;
+    }
+    /*set the video behand the audio*/
+}
+
+.pet {
+    display: flex;
+    background-color: #b0e7fe
+}
+.pet > div {
+    background-color: #fffedc;
+    padding: 1px 2% 1px 2%;
+    margin: 10px 2vw 10px 2vw;
+    font-size: 0.2in;
+}
+.pet {
+    justify-content: flex-start;
+}
+
+.trans {
+    display: flex;
+    background-color: #b0e7fe
+}
+.trans > div {
+    background-color: #fffedc;
+    padding: 1px 2% 1px 2%;
+    margin: 10px 2vw 10px 2vw;
+    font-size: 0.2in;
+}
+.trans {
+    justify-content: center;
+}
+
+.note {
+    display: flex;
+    background-color: #b0e7fe
+}
+.note > div {
+    background-color: #fffedc;
+    padding: 1px 2% 1px 2%;
+    margin: 10px 2vw 10px 2vw;
+    font-size: 0.2in;
+}
+.note {
+    justify-content: space-evenly;
+}
+
+.item1 { grid-area: left; }
+.item2 { grid-area: right; }
+.item3 { grid-area: footer; }
+
+.q1{
+    display: grid;
+  grid-template-areas:
+    'left left right right'
+    'left left right right'
+    'footer footer footer footer';
+
+  background-color: #ffb8ec;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+}
+
+.chose1 { grid-area: left; }
+.chose2 { grid-area: header; }
+.chose3 { grid-area: right; }
+
+.q2{
+    display: grid;
+  grid-template-areas:
+    'header header header header'  
+    'left left right right'
+    'left left right right';
+
+  background-color: #caffb8;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+}
+
+.word1 { grid-area: header; }
+.word2 { grid-area: main; }
+.word3 { grid-area: footer; }
+
+.q3{
+    display: grid;
+  grid-template-areas:
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer';
+
+  background-color: #ffc7b8;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+}
